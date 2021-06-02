@@ -7,9 +7,11 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import ReactCardFlip from 'react-card-flip';
 
+
 const useStyles = makeStyles({
   root: {
-    maxWidth: 275,
+    minWidth: 275,
+    minHeight: 125
   },
   bullet: {
     display: 'inline-block',
@@ -25,9 +27,8 @@ const useStyles = makeStyles({
 });
 
 
-export default function SimpleCard() {
+export default function SimpleCard(props) {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
   const [isFlipped, setisFlipped] =useState(false)
 
   function handleClick(e) {
@@ -37,11 +38,9 @@ export default function SimpleCard() {
 
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-        <Card className={classes.root} style={{backgroundColor:'#1F95EB'}}>
+        <Card className={classes.root}>
             <CardContent>
-                <center>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Eo_circle_blue_white_number-3.svg/1200px-Eo_circle_blue_white_number-3.svg.png" width="50" height="50"></img>
-                </center>
+            {props.number}
             </CardContent>
             <CardActions>
                 <Button size="small" onClick={handleClick}>Flip card</Button>
@@ -51,7 +50,7 @@ export default function SimpleCard() {
         <Card className={classes.root}>
             <CardContent>
                 <Typography className={classes.title} gutterBottom>
-                    Front
+                    {props.back}
                 </Typography>
             </CardContent>
             <CardActions>
