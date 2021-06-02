@@ -38,24 +38,18 @@ export default function SimpleCard(props) {
 
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-        <Card className={classes.root}>
+        <Card className={classes.root} onClick={handleClick}>
             <CardContent>
             {props.number}
             </CardContent>
-            <CardActions>
-                <Button size="small" onClick={handleClick}>Flip card</Button>
-            </CardActions>
         </Card>
 
-        <Card className={classes.root}>
+        <Card className={classes.root} onClick={handleClick}>
             <CardContent>
-                <Typography className={classes.title} gutterBottom>
+                <Typography className={classes.title} gutterBottom >
                     {props.back}
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button size="small" onClick={handleClick}>Flip card</Button>
-            </CardActions>
         </Card>
 
     </ReactCardFlip>
