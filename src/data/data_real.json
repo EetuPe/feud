@@ -1,0 +1,136 @@
+[
+  {
+    "id": 1,
+    "kysymys": "Rikkoo maailmanennätyksen",
+    "eka": "Ville",
+    "toka": "Bao",
+    "kolmas": "Aaron",
+    "neljäs": ""
+  },
+
+  {
+    "id": 2,
+    "kysymys": "Joutuu suorittamaan inssin useimmin",
+    "eka": "Anni",
+    "toka": "Helmi",
+    "kolmas": "Aaron",
+    "neljäs": "Ville"
+  },
+
+  {
+    "id": 3,
+    "kysymys": "On venäläinen vakooja",
+    "eka": "Bao",
+    "toka": "Mikael",
+    "kolmas": "Eetu",
+    "neljäs": "Julia"
+  },
+
+  {
+    "id": 4,
+    "kysymys": "Joutuu keskelle kolmiodraamaa",
+    "eka": "Anni",
+    "toka": "Julia",
+    "kolmas": "Leevi",
+    "neljäs": "Helmi"
+  },
+
+  {
+    "id": 5,
+    "kysymys": "Joutuu asumaan eläintarhassa",
+    "eka": "Ville",
+    "toka": "Anni",
+    "kolmas": "Aaron",
+    "neljäs": "Olli"
+  },
+
+  {
+    "id": 6,
+    "kysymys": "Varastaa jotakin",
+    "eka": "Helmi",
+    "toka": "Leevi",
+    "kolmas": "Mikael",
+    "neljäs": "Aaron"
+  },
+
+  {
+    "id": 7,
+    "kysymys": "On eniten sosiaalisesti awkward",
+    "eka": "Leevi",
+    "toka": "Eetu",
+    "kolmas": "Aaron",
+    "neljäs": "Anni"
+  },
+
+  {
+    "id": 8,
+    "kysymys": "Kokeilee huumeita",
+    "eka": "Helmi",
+    "toka": "Anni",
+    "kolmas": "Olli",
+    "neljäs": "Leevi"
+  },
+
+  {
+    "id": 9,
+    "kysymys": "Unohtaa ystävien syntymäpäivät",
+    "eka": "Aaron",
+    "toka": "Stella",
+    "kolmas": "Mikael",
+    "neljäs": "Leevi"
+  },
+
+  {
+    "id": 10,
+    "kysymys": "Menee ensimmäisenä naimisiin",
+    "eka": "Julia",
+    "toka": "Helmi",
+    "kolmas": "Eetu",
+    "neljäs": "Mikael"
+  },
+
+  {
+    "id": 11,
+    "kysymys": "Ajaa päänsä kaljuksi",
+    "eka": "Aaron",
+    "toka": "Ville",
+    "kolmas": "Leevi",
+    "neljäs": "Mikael"
+  },
+
+  {
+    "id": 12,
+    "kysymys": "Muuttaa ulkomaille jonkin asian perässä",
+    "eka": "Stella",
+    "toka": "Anni",
+    "kolmas": "Helmi",
+    "neljäs": "Bao"
+  },
+
+  {
+    "id": 13,
+    "kysymys": "Saa ensimmäisenä lapsen",
+    "eka": "Julia",
+    "toka": "Bao",
+    "kolmas": "Helmi",
+    "neljäs": "Mikael"
+  },
+
+  {
+    "id": 14,
+    "kysymys": "Tulee diktaattoriksi",
+    "eka": "Olli",
+    "toka": "Mikael",
+    "kolmas": "Leevi",
+    "neljäs": "Julia"
+  },
+
+  {
+    "id": 15,
+    "kysymys": "Kuka pidätetään ensimmäisenä",
+    "eka": "Mikael",
+    "toka": "Helmi",
+    "kolmas": "Anni",
+    "neljäs": "Leevi"
+  }
+]

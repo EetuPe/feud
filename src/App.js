@@ -10,7 +10,15 @@ import { IoMdArrowRoundBack } from 'react-icons/io';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { pulse } from 'react-animations';
+import Radium, {StyleRoot} from 'radium';
 
+const styles = {
+  pulse: {
+    animation: 'x 1s',
+    animationName: Radium.keyframes(pulse, 'pulse')
+  }
+}
 const question = "Die"
 class App extends React.Component {
   componentDidMount() {
@@ -61,6 +69,7 @@ class App extends React.Component {
 
   render() {
     return (
+      <StyleRoot>
       <div>
         <Title />
         {PostData.slice(this.state.showItems - 1, this.state.showItems).map(
@@ -68,6 +77,7 @@ class App extends React.Component {
             return (
               <div key={questionDetail.id + 1}>
                 <Subtitle question={questionDetail.kysymys} />
+                
               </div>
             );
           }
@@ -76,7 +86,7 @@ class App extends React.Component {
           {PostData.slice(this.state.showItems - 1, this.state.showItems).map(
             (questionDetail) => {
               return (
-                <div key={questionDetail.id + 2}>
+                <div key={questionDetail.id + 2}  className="test" style={styles.pulse}>
                   <SimpleCard
                     className="flex-item"
                     number="1"
@@ -90,7 +100,7 @@ class App extends React.Component {
           {PostData.slice(this.state.showItems - 1, this.state.showItems).map(
             (questionDetail) => {
               return (
-                <div key={questionDetail.id + 3}>
+                <div key={questionDetail.id + 3} className="test" style={styles.pulse}>
                   <SimpleCard
                     className="flex-item"
                     number="2"
@@ -107,7 +117,7 @@ class App extends React.Component {
           {PostData.slice(this.state.showItems - 1, this.state.showItems).map(
             (questionDetail) => {
               return (
-                <div key={questionDetail.id + 4}>
+                <div key={questionDetail.id + 4} className="test" style={styles.pulse}>
                   <SimpleCard
                     className="flex-item"
                     number="3"
@@ -121,12 +131,13 @@ class App extends React.Component {
           {PostData.slice(this.state.showItems - 1, this.state.showItems).map(
             (questionDetail) => {
               return (
-                <div key={questionDetail.id + 5}>
+                <div key={questionDetail.id + 5} className="test" style={styles.pulse}>
                   <SimpleCard
                     className="flex-item"
                     number="4"
                     back={questionDetail.neljäs}
                     isflipped={this.state.isFlipped}
+                    
                   ></SimpleCard>
                 </div>
               );
@@ -184,6 +195,7 @@ class App extends React.Component {
           </Button>
         </div>
       </div>
+      </StyleRoot>
     );
   }
 }
