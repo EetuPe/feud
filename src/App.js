@@ -4,7 +4,7 @@ import React from 'react';
 import SimpleCard, {setisFlipped} from './components/card'
 import Title from './components/Title';
 import Subtitle from './components/Subtitle';
-import PostData from './data/data.json'
+import PostData from './data/data_real.json'
 import { IoMdArrowRoundForward } from 'react-icons/io';
 import { IoMdArrowRoundBack } from 'react-icons/io';
 import Button from '@material-ui/core/Button';
